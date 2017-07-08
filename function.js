@@ -34,6 +34,6 @@ function factorial(number){
 //Write a function kebabToSnake() which takes a single kebab cased string argument
 // and returns the snake_cased_version. Replace "-" with "_"
 function kebabToSnake(string){
-	var result = string.replace("-", "_")
+	var result = string.replace(/-/g, "_")
 	return result;
 }
