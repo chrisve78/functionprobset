@@ -15,14 +15,20 @@ function isEven(number){
 // 6! is 6 x 5 x 4 x 3 x 2 x 1
 // 0! is 1
 function factorial(number){
-	if(number < 0){
-		return;
-	}else if(number === 0){
-		return 1;
-	}else{
-		return number * factorial(number-1);
+	// recursion
+	// if(number < 0){
+	// 	return;
+	// }else if(number === 0){
+	// 	return 1;
+	// }else{
+	// 	return number * factorial(number-1);
+	// }
+	//iteration
+	var result = number;
+	for(var i = number-1; i >= 1; i--){
+		result *= i;
 	}
-
+	return result;
 }
 
 //Write a function kebabToSnake() which takes a single kebab cased string argument
