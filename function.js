@@ -24,8 +24,8 @@ function factorial(number){
 	// 	return number * factorial(number-1);
 	// }
 	//iteration
-	var result = number;
-	for(var i = number-1; i >= 1; i--){
+	var result = 1
+	for(var i = 2; i <= number; i++){
 		result *= i;
 	}
 	return result;
